@@ -22,18 +22,70 @@
             </ul>
         </nav>
     </header>
-    <p>aca iria el fomrulario de ccontactp</p>
+    <main>
+    <h1 class="page-title">Contacto</h1>
+
+    <section class="contact-section">
+    <form action="#" method="POST">
+        <div class="form-group">
+        <label for="name">Nombre completo</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+        </div>
+
+        <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tunombre@ejemplo.com" required />
+        </div>
+
+        <div class="form-group">
+        <label for="phone">Teléfono</label>
+        <input type="tel" id="phone" name="phone" placeholder="+54 11 1234-5678" required />
+        </div>
+
+        <div class="form-group">
+        <label for="reason">Motivo de contacto</label>
+        <select id="reason" name="reason" required>
+            <option value="" disabled selected>Seleccioná una opción</option>
+            <option value="reserva">Reservar una fecha</option>
+            <option value="eventos">Preguntar por un álbum</option>
+            <option value="trabajo">Trabajá con nosotros</option>
+            <option value="otro">Otro</option>
+        </select>
+        </div>
+
+        <fieldset>
+        <legend>Ya escuchaste a tu artista favorito en nuestro formato?</legend>
+        <div class="radio-group">
+            <div>
+            <input type="radio" id="first-yes" name="first-visit" value="si" required />
+            <label for="first-yes">Sí</label>
+            </div>
+            <div>
+            <input type="radio" id="first-no" name="first-visit" value="no" required />
+            <label for="first-no">No</label>
+            </div>
+        </div>
+        </fieldset>
+
+        <div class="form-group">
+        <label for="comment">Mensaje</label>
+        <textarea id="comment" name="comment" placeholder="Contanos en qué te podemos ayudar..." required></textarea>
+        </div>
+
+        <div class="form-buttons">
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        <button type="reset" class="btn btn-secondary">Limpiar formulario</button>
+        </div>
+    </form>
+    </section>
+</main>
     <footer>
         <ul class="nav-footer">
                 <li> <a href="./index.html">Inicio</a></li>
-                <li><a href="·">Nuestro espacio</a></li>
-                <li><a href="·">Galería</a></li>
-                <li><a href="·">Contacto</a></li>
+                <li><a href="./nuestro-espacio.html">Nuestro espacio</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
-            <div class="footer-social">
-                <a href="#"aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            </div>
             <p class="footer-text">© 2026 Vinyl boutique. Todos los derechos reservados.</p>
     </footer>
 </body>

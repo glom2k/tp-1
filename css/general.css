@@ -27,6 +27,7 @@
 --font-body: "Poppins", sans-serif;
 }
 
+
 body {
     background-color: var(--bg-dark);
     color : var(--text-primary);
@@ -113,7 +114,7 @@ header{
     font-size: 1rem;
     font-weight: 600;
     background-color: var(--orange-primary);
-    color: var(--text-primary);
+    color: var(--text-secondary);
     border: none;
     padding: 0.8rem 1.8rem;
     border-radius: 20px;
@@ -124,6 +125,26 @@ header{
 
 .btn:hover{
     background-color: var(--orange-hover);
+}
+
+.btn btn-secondary {
+color: var(--text-secondary);
+    background-color: transparent;color: var(--color-primary);
+border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+background-color: var(--color-primary);
+            color: var(--color-white);
+}
+
+.page-title{
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem 0;
 }
 
 /*footer*/
