@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --max-width: 1100px;
+    
+  /* Fondo principal y capas (Tonos café/espreso oscuro) */
+  --bg-dark: #1a1412;        /* Espreso profundo (Fondo general) */
+  --bg-card: #8b5337;        /* Café tostado (Tarjetas, modales) */
+  --bg-elevated: #3b2d26;    /* Marrón medio (Hover en elementos, bordes) */
+
+  /* Textos y neutros (Tonos crema y marfil) */
+  --text-primary: #fbf3ec;    /* Crema claro (Texto principal, títulos) */
+  --text-secondary: #f3bb9a;  /* Marrón sepia suave (Subtítulos, descripciones) */
+
+  /* Colores de acento principales (Tonos naranja y óxido) */
+  --orange-primary: #e06d2d;   /* Naranja ámbar/vinilo (Botones principales, enlaces) */
+  --orange-hover: #c85a1f;     /* Óxido intenso (Hover de botones) */
+  --orange-vibrant: #ff9f1c;   /* Naranja cálido brillante (Badges, ofertas, destacados) */
+
+  /* Detalle retro complementario */
+  --gold-accent: #d4a373;      /* Bronce/Latón cálido (Bordes especiales, detalles analógicos) */
+--font-heading: "Fraunces", serif; 
+--font-body: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color : var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: var(--font-body);
+}
+
+h1,h2,h3{
+    font-family: var(--font-heading);
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    color: var(--text-primary);
+}
+
+ul{
+    list-style: none;
+}
+
+/*header y nav*/
+header{
+    background-color: var(--bg-card);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo{
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.fa-compact-disc{
+    color: var(--gold-accent);
+    margin-right: 0.5rem;
+}
+
+.nav-links{
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+}
+
+.nav-links a{
+    color: var(--text-secondary);
+    font-size: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s
+}
+
+.nav-links a:hover{
+    color: var(--bg-elevated);
+}
+
+
+/*botones*/
+.btn{
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--orange-primary);
+    color: var(--text-primary);
+    border: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    gap: 2rem;
+}
+
+.btn:hover{
+    background-color: var(--orange-hover);
+}
+
+/*footer*/
+footer{
+    background-color: var(--bg-card);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.nav-footer{
+    display: flex;
+    gap: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.nav-footer a{
+    color: var(--text-secondary);
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s
+}
+.nav-footer a:hover{
+    color: var(--bg-elevated);
+}
+
+.footer-text {
+    color: var(--text-secondary);
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+}
+
+.fa-facebook-f
+{
+    color: var(--text-secondary);
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.fa-instagram
+{
+    color: var(--text-secondary);
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+.navbar {
+    flex-direction: column;
+    text-align: center;
+    display: block;
+}
+}
